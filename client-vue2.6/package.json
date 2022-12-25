@@ -1,0 +1,19 @@
+{
+  "name": "client-vue2.6",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "dependencies": {
+    "vue": "~2.6.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-legacy": "^2.0.0",
+    "terser": "^5.14.2",
+    "vite": "^3.0.2",
+    "vite-plugin-vue2": "^2.0.3",
+    "vue-template-compiler": "2.6.14"
+  }
+}
