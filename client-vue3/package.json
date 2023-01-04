@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "universal-input-counter": "../component",
     "vue": "^3.2.45"
   },
   "devDependencies": {

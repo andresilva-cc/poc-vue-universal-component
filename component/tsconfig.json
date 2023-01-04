@@ -1,18 +1,20 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    // "target": "ES2015",
+    "module": "CommonJS",
+    // "moduleResolution": "Node",
     "strict": true,
     "jsx": "preserve",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
+    // "resolveJsonModule": true,
+    // "isolatedModules": true,
     "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
+    // "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "noEmit": true
+    // "noEmit": true,
+    "typeRoots": [                                       /* Specify multiple folders that act like './node_modules/@types'. */
+      "./node_modules/@types",
+      "./@types"
+    ],
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  // "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
 }

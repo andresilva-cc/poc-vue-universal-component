@@ -1,11 +1,19 @@
 <script setup>
+// import { InputCounter } from 'universal-input-counter'
+// import 'universal-input-counter/dist/style.css'
+import { useMouse } from 'universal-input-counter'
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+
+const { x, y } = useMouse()
 </script>
 
 <template>
   <div id="app">
     <header>
+      {{ x }} {{ y }}
+      <!-- <InputCounter /> -->
+
       <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
       <div class="wrapper">
