@@ -341,8 +341,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-universal-input-counter@../component:
-  version "0.0.0"
+universal-input-counter@^0.4.3:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/universal-input-counter/-/universal-input-counter-0.4.3.tgz#dafd606212a31aa0f1f80343ee0c3deb3a1aeef4"
+  integrity sha512-nhz5BgX9T3K23ldRDfUbtQLaDQDatOE1KWBsJphMzJjtyQJIVwnaatj5o7kVh7MrCcqHZH6aLKV4/RnvVwpv9w==
   dependencies:
     vue-demi "^0.13.11"
 
