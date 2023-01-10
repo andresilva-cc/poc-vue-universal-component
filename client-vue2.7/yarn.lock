@@ -359,10 +359,10 @@ terser@^5.14.2:
     commander "^2.20.0"
     source-map-support "~0.5.20"
 
-universal-input-counter@^0.4.3:
-  version "0.4.3"
-  resolved "https://registry.yarnpkg.com/universal-input-counter/-/universal-input-counter-0.4.3.tgz#dafd606212a31aa0f1f80343ee0c3deb3a1aeef4"
-  integrity sha512-nhz5BgX9T3K23ldRDfUbtQLaDQDatOE1KWBsJphMzJjtyQJIVwnaatj5o7kVh7MrCcqHZH6aLKV4/RnvVwpv9w==
+universal-input-counter@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/universal-input-counter/-/universal-input-counter-0.5.3.tgz#78b048864eab9e9ccefbaa2ad5d2055c88be2402"
+  integrity sha512-SX15RZtPaIve5qnUrvk5Nt9qLF7C7PCBYBwjYQjLlzroikadzNNtJ2lKcBgsgt35YjcikmBjhKn063dVsZ8dyA==
   dependencies:
     vue-demi "^0.13.11"
 

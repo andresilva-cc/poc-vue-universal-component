@@ -1,6 +1,6 @@
 <script>
 import { InputCounter } from 'universal-input-counter'
-// import 'universal-input-counter/dist/style.css'
+import 'universal-input-counter/dist/style.css'
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 

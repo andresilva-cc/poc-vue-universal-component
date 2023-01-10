@@ -1,3 +1,4 @@
+<script lang="ts">
 import { ref, computed, defineComponent } from 'vue-demi'
 import h from './h-demi'
 
@@ -17,8 +18,15 @@ export default defineComponent({
       console.log('string.value: ', string.value)
     }
 
-    return () => h('div', {}, [
+    return () => h('div', {
+      attrs: {
+        class: 'universal-input-counter'
+      }
+    }, [
       h('input', {
+        attrs: {
+          class: 'universal-input-counter__input'
+        },
         domProps: {
           value: string.value
         },
@@ -30,23 +38,24 @@ export default defineComponent({
     ])
   }
 })
+</script>
 
-// <!-- <style scoped>
-// div {
-//   text-align: center;
-//   font-family: sans-serif;
-// }
+<style>
+.universal-input-counter {
+  text-align: center;
+  font-family: sans-serif;
+}
 
-// input {
-//   padding: 10px 15px;
-//   border: none;
-//   border: 2px solid tomato;
-//   color: #000;
-//   border-radius: 5px;
-// }
+.universal-input-counter__input {
+  padding: 10px 15px;
+  border: none;
+  border: 2px solid tomato;
+  color: #000;
+  border-radius: 5px;
+}
 
-// input:focus {
-//   outline: none;
-//   border: 2px solid sienna;
-// }
-// </style> -->
+.universal-input-counter__input:focus {
+  outline: none;
+  border: 2px solid sienna;
+}
+</style>

@@ -1,7 +1,8 @@
 import { h as hDemi, isVue2 } from 'vue-demi'
 
 interface Options {
-  props?: Object,
+  attrs?: Object
+  props?: Object
   domProps?: Object
   on?: Object
 }
@@ -19,10 +20,10 @@ const h = (type: String | Object, options: Options & any = {}, chidren?: any) =>
   if (isVue2)
     return hDemi(type, options, chidren)
 
-  const { props, domProps, on, ...extraOptions } = options
+  const { attrs, props, domProps, on, ...extraOptions } = options
 
   let ons = adaptOnsV3(on)
-  const params = { ...extraOptions, ...props, ...domProps, ...ons }
+  const params = { ...extraOptions, ...attrs, ...props, ...domProps, ...ons }
   console.log(params)
   return hDemi(type, params, chidren)
 }
