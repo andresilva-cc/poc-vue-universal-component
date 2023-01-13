@@ -1,11 +1,18 @@
+import path from 'path'
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import vue2 from '@vitejs/plugin-vue2'
+import vue2Jsx from '@vitejs/plugin-vue2-jsx'
 import dts from 'vite-plugin-dts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue2(),
+    vue2Jsx({
+      compositionAPI: {
+        importSource: path.resolve('./src/h-demi.ts')
+      }
+    }),
     dts({
       insertTypesEntry: true,
       tsConfigFilePath: './tsconfig.json',
@@ -18,6 +25,7 @@ export default defineConfig({
   },
 
   build: {
+    minify: false,
     lib: {
       name: 'input-counter',
       entry: 'index.ts'

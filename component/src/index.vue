@@ -1,6 +1,5 @@
-<script lang="ts">
-import { ref, computed, defineComponent } from 'vue-demi'
-import h from './h-demi'
+<script lang="tsx">
+import { h, ref, computed, defineComponent } from 'vue-demi'
 
 export default defineComponent({
   setup() {
@@ -18,24 +17,17 @@ export default defineComponent({
       console.log('string.value: ', string.value)
     }
 
-    return () => h('div', {
-      attrs: {
-        class: 'universal-input-counter'
-      }
-    }, [
-      h('input', {
-        attrs: {
-          class: 'universal-input-counter__input'
-        },
-        domProps: {
-          value: string.value
-        },
-        on: {
-          input: handleInput
-        }
-      }),
-      h('p', {}, `Length: ${length.value}`)
-    ])
+    return () => (
+      <div class="universal-input-counter">
+        <input
+          class="universal-input-counter__input"
+          value={string.value}
+          onInput={handleInput}
+        />
+        <p>Length: {length.value}</p>
+      </div>
+    )
+
   }
 })
 </script>
