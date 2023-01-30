@@ -10,7 +10,7 @@ export default defineConfig({
     vue2(),
     vue2Jsx({
       compositionAPI: {
-        importSource: path.resolve('./src/h-demi.ts')
+        importSource: path.resolve('./src/h/h.ts')
       }
     }),
     dts({
@@ -25,7 +25,6 @@ export default defineConfig({
   },
 
   build: {
-    minify: false,
     lib: {
       name: 'input-counter',
       entry: 'index.ts'

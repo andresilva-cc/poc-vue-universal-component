@@ -10,11 +10,7 @@ export default defineComponent({
     })
 
     function handleInput(event: any) {
-      console.log('event: ', event)
-      console.log('event.target.value: ', event.target.value)
-      console.log('string.value: ', string.value)
       string.value = event.target.value
-      console.log('string.value: ', string.value)
     }
 
     return () => (
