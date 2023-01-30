@@ -1,5 +1,5 @@
 <script lang="tsx">
-import { h, ref, computed, defineComponent } from 'vue-demi'
+import { ref, computed, defineComponent } from 'vue-demi'
 
 export default defineComponent({
   setup() {
