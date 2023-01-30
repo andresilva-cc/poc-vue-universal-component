@@ -10,7 +10,7 @@ export default defineConfig({
     vue2(),
     vue2Jsx({
       compositionAPI: {
-        importSource: path.resolve('./src/h/h.ts')
+        importSource: path.resolve('./src/h/h-demi.ts')
       }
     }),
     dts({
