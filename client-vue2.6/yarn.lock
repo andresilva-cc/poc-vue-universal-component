@@ -1137,10 +1137,10 @@ to-fast-properties@^2.0.0:
   resolved "https://registry.yarnpkg.com/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==
 
-universal-input-counter@^0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/universal-input-counter/-/universal-input-counter-0.7.3.tgz#b9d1b2e5f5acdc3069f5a5536c698758167466e0"
-  integrity sha512-w9YcaGDDyC0yJrIu1OceIuacpyEBk2R2vwlGag9nBZTLVkfnN7nS9jEn9jXwPZ/VfyvDxSYevKLp+6B8fLVnGA==
+universal-input-counter@^0.7.5:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/universal-input-counter/-/universal-input-counter-0.7.5.tgz#ba28f764fd3616b6d7dde3948c4e8d3e754ce377"
+  integrity sha512-/xNAs3n04viHP6b1+RgOX5PcZWVjC7WT6ukIHFs7kHIdB1SWc5jy/Zw2B3CVgq7GH3dd7CMryX+6QXqEx2oBWA==
   dependencies:
     vue-demi "^0.13.11"
 
