@@ -20,8 +20,6 @@ function h(tag: string | Object | Function, data?: VNodeData, children?: any) {
 
   const hasData = data && !Array.isArray(data) && typeof data !== 'string'
 
-  let transformedData = {}
-
   if (hasData) {
     const {
       on,
@@ -32,16 +30,15 @@ function h(tag: string | Object | Function, data?: VNodeData, children?: any) {
     } = data
   
     const eventHandlers = transformEventHandlers(on)
-    transformedData = {
+    
+    const transformedData: any = {
       ...others,
       ...attrs,
       ...props,
       ...domProps,
       ...eventHandlers
     }
-  }
 
-  if (hasData) {
     return hDemi(tag, transformedData, children)
   }
 
